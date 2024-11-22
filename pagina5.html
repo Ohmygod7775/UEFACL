@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte Seu Time de Futebol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    window.onload = function() {
+        alert("Monte o time da champions do seus sonhos(jogadores com asterisco são jogadores importantes que não disputam mais a copa)");
+    }
+</script>
+<body>
+    <header><h1>Monte Seu Time de Futebol</h1>
+    <!-- Seção para escolha da formação -->
+    <label for="formacao">Escolha a Formação:</label>
+    <select id="formacao">
+        <option value="4:3:3">4-3-3</option>
+        <option value="4:4:2">4-4-2</option>
+        <option value="4:5:1">4-5-1</option>
+        <option value="3:5:2">3-5-2</option>
+        <option value="3:4:3">3-4-3</option>
+    </select>
+</header>
+
+    <!-- Seção para escolha dos jogadores -->
+    <div id="escalacao">
+        <h2>Escolha seus jogadores</h2>
+        
+        <fieldset id="Goleiros">
+        <!-- Goleiros -->
+        <div id="goleiros">
+            <h3>Goleiros</h3>
+            <div class="opcao-jogador" data-posicao="goleiro">Keylor Navas* </div>
+            <div class="opcao-jogador" data-posicao="goleiro">Alisson</div>
+            <div class="opcao-jogador" data-posicao="goleiro">E. Martinez</div>
+            <div class="opcao-jogador" data-posicao="goleiro">Courtois</div>
+            <div class="opcao-jogador" data-posicao="goleiro">Ter Stegen</div>
+            <div class="opcao-jogador" data-posicao="goleiro">Neuer</div>
+            <div class="opcao-jogador" data-posicao="goleiro">Kobel</div>
+        </div>
+       </fieldset>
+
+       <fieldset id="Defensores">
+        <!-- Defensores -->
+        <div id="defensores">
+            <h3>Defensores</h3>
+            <div class="opcao-jogador" data-posicao="defensor">Pique*</div>
+            <div class="opcao-jogador" data-posicao="defensor">Pepe*</div>
+            <div class="opcao-jogador" data-posicao="defensor">Sergio Ramos*</div>
+            <div class="opcao-jogador" data-posicao="defensor">Ronald Araujo</div>
+            <div class="opcao-jogador" data-posicao="defensor">Rudiger</div>
+            <div class="opcao-jogador" data-posicao="defensor">Mats Hummels</div>
+            <div class="opcao-jogador" data-posicao="defensor">De Ligt</div>
+            <div class="opcao-jogador" data-posicao="defensor">Bremer</div>
+            <div class="opcao-jogador" data-posicao="defensor">G. Magalhães</div>
+            <div class="opcao-jogador" data-posicao="defensor">Ruben Dias</div>
+            <div class="opcao-jogador" data-posicao="defensor">Van Dijk</div>
+        </div>
+    </fieldset>
+
+    <fieldset id="laterais">
+        <!-- Laterais -->
+        <div id="laterais">
+            <h3>Laterais</h3>
+            <div class="opcao-jogador" data-posicao="lateral">Daniel Alves*</div>
+            <div class="opcao-jogador" data-posicao="lateral">Jordi Alba*</div>
+            <div class="opcao-jogador" data-posicao="lateral">Marcelo*</div>
+            <div class="opcao-jogador" data-posicao="lateral">Davies</div>
+            <div class="opcao-jogador" data-posicao="lateral">Alexander Arnold</div>
+            <div class="opcao-jogador" data-posicao="lateral">Acerbi</div>
+            <div class="opcao-jogador" data-posicao="lateral">Ryerson</div>
+            <div class="opcao-jogador" data-posicao="lateral">Saliba</div>
+            <div class="opcao-jogador" data-posicao="lateral">Gvardiol</div>
+            <div class="opcao-jogador" data-posicao="lateral">Carvajal</div>
+            <div class="opcao-jogador" data-posicao="lateral">Achraf Hakimi</div>
+        </div>
+        </fieldset>
+
+        <fieldset id="meio-campistas">
+        <!-- Meio-campistas -->
+        <div id="meio-campistas">
+            <h3>Meio-campistas</h3>
+            <div class="opcao-jogador" data-posicao="meioCampista">Toni Kroos*</div>
+            <div class="opcao-jogador" data-posicao="meioCampista">Sergio Busquets*</div>
+            <div class="opcao-jogador" data-posicao="meioCampista">Rodri</div>
+            <div class="opcao-jogador" data-posicao="meioCampista">Odegaard</div>
+            <div class="opcao-jogador" data-posicao="meioCampista">Bellingham</div>
+            <div class="opcao-jogador" data-posicao="meioCampista">Calhanoglu</div>
+            <div class="opcao-jogador" data-posicao="meioCampista">Sabitzer</div>
+            <div class="opcao-jogador" data-posicao="meioCampista">De Bruyne</div>
+            <div class="opcao-jogador" data-posicao="meioCampista">Wirtz</div>
+            <div class="opcao-jogador" data-posicao="meioCampista">Mac Allister</div>
+            <div class="opcao-jogador" data-posicao="meioCampista">Kimmich</div>
+            <div class="opcao-jogador" data-posicao="meioCampista">Dani Olmo</div>
+            <div class="opcao-jogador" data-posicao="meioCampista">Valverde</div>
+            <div class="opcao-jogador" data-posicao="meioCampista">Pedri</div>
+        </div>
+        </fieldset>
+
+        <fieldset id="atacantes">
+        <!-- Atacantes -->
+        <div id="atacantes">
+            <h3>Atacantes</h3>
+            <div class="opcao-jogador" data-posicao="atacante">Karim Benzema*</div>
+            <div class="opcao-jogador" data-posicao="atacante">Neymar Jr*</div>
+            <div class="opcao-jogador" data-posicao="atacante">C.Ronaldo*</div>
+            <div class="opcao-jogador" data-posicao="atacante">Lionel Messi*</div>
+            <div class="opcao-jogador" data-posicao="atacante">Arjen Robeen*</div>
+            <div class="opcao-jogador" data-posicao="atacante">Gyokeres</div>
+            <div class="opcao-jogador" data-posicao="atacante">Haaland</div>
+            <div class="opcao-jogador" data-posicao="atacante">Vini Jr</div>
+            <div class="opcao-jogador" data-posicao="atacante">Raphinha</div>
+            <div class="opcao-jogador" data-posicao="atacante">Harry Kane</div>
+            <div class="opcao-jogador" data-posicao="atacante">Lamine Yamal</div>
+            <div class="opcao-jogador" data-posicao="atacante">Adeyemi</div>
+            <div class="opcao-jogador" data-posicao="atacante">J. Alvarez</div>
+            <div class="opcao-jogador" data-posicao="atacante">Lookman</div>
+            <div class="opcao-jogador" data-posicao="atacante">Salah</div>
+            <div class="opcao-jogador" data-posicao="atacante">Kylian Mbappé</div>
+            <div class="opcao-jogador" data-posicao="atacante">Bukayo Saka</div>
+        </div>
+    </fieldset>
+
+    </div>
+
+    <!-- Botão para mostrar o time montado -->
+    <button id="mostrar-time">Mostrar Time</button>
+
+    <h2>Time Montado</h2>
+    <div id="time-montado"></div>
+    <footer>
+        <nav>
+            <a href="index.html">Home</a>  | 
+            <a href="pagina3.html">Finais</a> | 
+            <a href="pagina4.html">Artilheiros</a> | 
+            <a href="pagina5.html">escalação</a>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

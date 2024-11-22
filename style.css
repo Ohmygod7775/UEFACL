@@ -1,0 +1,290 @@
+/* Reset de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0E1C29;
+    color: rgb(255, 255, 255);
+    line-height: 1.6;
+}
+/* Alterar tamanho de imagem*/
+img {
+    width: 100%;
+    height: auto;
+    transition: width 0.3s ease;
+  }
+
+  .aumentar {
+    width: 120%; /* Aumenta a imagem */
+  }
+
+  .diminuir {
+    width: 80%; /* Diminui a imagem */
+  }
+
+  .final {
+    background-color: hsl(256, 87%, 12%); /* Cor de fundo para cada bloco */
+    padding: 20px; /* Espaçamento interno para as seções */
+    margin: 20px 0; /* Espaçamento entre os blocos */
+    border-radius: 8px; /* Bordas arredondadas para suavizar o visual */
+    box-shadow: 0 4px 8px hwb(0 23% 77%); /* Sombra suave para dar destaque */
+    text-align: center; /* Alinha o conteúdo ao centro */
+  }
+
+  .final p {
+    margin: 10px 0; /* Espaçamento entre os parágrafos */
+    font-size: 18px; /* Tamanho da fonte */
+    color: hsl(0, 0%, 93%); /* Cor do texto */
+  }
+/* Header */
+header {
+    background-color: #161e69; /* Azul da Champions League */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Estilo das imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Links no Footer */
+footer {
+    background-color: #003D73;
+    padding: 10px;
+    text-align: center;
+}
+
+footer nav a {
+    color: rgb(247, 242, 242);
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 15px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo de seções gerais */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #1E2A42;
+    border-radius: 10px;
+}
+
+/* Estilo dos botões */
+button {
+    background-color: #0066cc;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+/* Resultado do Quiz */
+#resultado {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Seção de times campeões */
+#times .time {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#times .time img {
+    width: 80px;
+    margin-right: 20px;
+}
+
+/* Estilo para o formulário de quiz */
+#quizForm p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#quizForm input {
+    margin-right: 10px;
+}
+
+/* Estilo de imagens dos times e finais */
+#imagem img {
+    width: 80%;
+    margin: 20px 0;
+}
+.imagem-container {
+    position: relative;
+    display: inline-block;
+    width: 300px; /* Ajuste o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+
+  .imagem-container img {
+    width: 100%; /* A imagem vai ocupar 100% da largura do contêiner */
+    height: auto; /* Mantém a altura proporcional */
+  }
+
+  .link-camuflado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0); /* Transparente */
+    border: none;
+  }
+/* Estilos para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #030438;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #06223f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilo para a tabela */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color:#000000
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 7px solid #ddd;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilo para as linhas da tabela */
+tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilos para centralizar o conteúdo na página */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color:#000000
+    
+}
+
+/* Estilo para a lista de jogadores montados */
+#time-montado {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 60%; /* Ajuste o tamanho conforme necessário */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1b0d58;
+}
+
+/* Estilo para os jogadores */
+#time-montado ul {
+    list-style: none;
+    padding: 0;
+}
+
+#time-montado li {
+    padding: 5px;
+    text-align: left; /* Alinha os itens à esquerda dentro do bloco */
+    font-size: 16px;
+    background-color: #e0f7fa;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Estilo para as opções de jogador */
+.opcao-jogador {
+    display: inline-block;
+    width: 150px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f5f5f5;
+}
+
+.opcao-jogador:hover {
+    background-color: #ccc;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+  /* Estilo para os grupos de jogadores */
+  fieldset {
+    border: 1px solid #d3d1dd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: #070753;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    background-color: #11073f;
+    border-radius: 5px;
+}
